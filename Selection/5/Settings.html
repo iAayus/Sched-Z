@@ -100,43 +100,38 @@
           <div><span class="dot"></span></div>
         </div>
       </header>
-      <section id="privacy">
-        <h2>Privacy Settings</h2>
-        <form>
-          <input type="checkbox" id="allow-contact" name="allow-contact" checked />
-          <label for="allow-contact">Allow others to contact me</label><br /><br />
-          <button type="submit">Save Changes</button>
-        </form>
-      </section>
-      <section id="notifications">
-        <h2>Notification Settings</h2>
-        <form>
-          <input type="checkbox" id="email-notifications" name="email-notifications" checked />
-          <label for="email-notifications">Receive email notifications</label><br /><br />
-          <input type="checkbox" id="push-notifications" name="push-notifications" />
-          <label for="push-notifications">Receive push notifications</label><br /><br />
-          <button type="submit">Save Changes</button>
-        </form>
-      </section>
-      <section id="mode">
-        <h2>Theme</h2>
-        <ul>
-          <li class="mode">
-            <div class="sun-moon">
-              <i class="bx bx-moon icon moon"></i>
-              <i class="bx bx-sun icon sun"></i>
-            </div>
-            <span class="mode-text text">Dark mode</span>
-
-            <div class="toggle-switch">
-              <span class="switch"></span>
-            </div>
-          </li>
-        </ul>
-      </section>
     </main>
     <!-- back -->
-
+    <div class="container">
+      <div class="section notification">
+        <h2>Notifications</h2>
+        <p>Choose how you want to receive notifications:</p>
+        <form>
+          <label> <input type="checkbox" name="email" checked /> Email </label><br />
+          <label> <input type="checkbox" name="sms" /> SMS </label><br />
+          <label> <input type="checkbox" name="push" /> Push notification </label><br />
+          <button>Save</button>
+        </form>
+      </div>
+      <div class="section account">
+        <h2>Account</h2>
+        <p>Manage your account settings:</p>
+        <form>
+          <label> Email address: <input type="email" name="email" required /> </label><br />
+          <label> Password: <input type="password" name="password" required /> </label><br />
+          <button>Save</button>
+        </form>
+      </div>
+      <div class="section help">
+        <h2>Help</h2>
+        <p>Need help? Contact us:</p>
+        <ul>
+          <li>Email: support@SchedZ.com</li>
+          <li>Phone: 1231231230</li>
+          <li>Chat: <a href="#">Start chat</a></li>
+        </ul>
+      </div>
+    </div>
     <!-- back -->
     <script src="/script.js"></script>
   </body>
